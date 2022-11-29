@@ -26,3 +26,17 @@ def alcohol():
         print("Wine is a rather mild drink, and moderate drinking has some benefits such as heart health and prevention of blood clots. However, too much, and you risk liver disease")
     elif drink == "Liquor":
         print("Liquor such as Vodka or Rum is a fairly strong dirnk, and you risk liver disease, stroke, sleep disorders, and depression if you take too much")
+
+def nicotine():
+    print("Nicotine is a very addictive substance, and is known to cause cancer, heart disease, and more. Do your best to refrain from taking any!")
+
+def cigarettes():
+    print("Cigarettes are very addictive, and are known to cause cancer, heart disease, and more. Do your best to refrain from taking any!")
+
+def cocaine():
+    print("DON'T DO COCAINE")
+    print("COCAINE CAN EASILY CAUSE OVERDOSES AND ILLNESSES")
+    print("COCAINE IS VERY ADDICTIVE")
+    print("COCAINE IS VERY DANGEROUS")
+    print("COCAINE IS VERY BAD")
+    print("DISPOSE OF COCAINE IMMEDIATELY")

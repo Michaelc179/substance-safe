@@ -8,7 +8,7 @@
 import hashlib
 from timer import Timer
 from password import old
-from substance import weed, edibles, alcohol
+from substance import weed, edibles, alcohol, nicotine, cigarettes, cocaine
 
 t = Timer()
 t.start()
@@ -103,11 +103,14 @@ def substance():
         alcohol()
     if sub == 4:
         print("You have abstained from nicotine for: ", '{:.2f}'.format(t.stop()),"seconds")
+        nicotine()
     if sub == 5:
         print("You have abstained from cigarettes for: ", '{:.2f}'.format(t.stop()),"seconds")
+        cigarettes()
     if sub == 6:
         print("You have abstained from cocaine for: ", '{:.2f}'.format(t.stop()),"seconds")
-    
+        cocaine()
+
     t.start()
 
 def check():
