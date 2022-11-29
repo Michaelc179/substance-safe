@@ -8,6 +8,7 @@
 import hashlib
 from timer import Timer
 from password import old
+from substance import weed, edibles, alcohol
 
 t = Timer()
 t.start()
@@ -81,28 +82,31 @@ def checkPass():
 
 def substance():
     global sub
-    print("1. Weed/Marijuana")
-    print("2. Alcohol")
-    print("3. Nicotine")
-    print("4. Cigarettes")
-    print("5. Cocaine")
-    print("6. Heroin")
+    print("1. Marijuana (Inhaled)")
+    print("2. Edibles (Ingested)")
+    print("3. Alcohol")
+    print("4. Nicotine (E-Cig)")
+    print("5. Cigarettes")
+    print("6. Cocaine")
     print("7. Other")
 
     sub = int(input("Please input the number of the substance: "))
 
     if sub ==1:
         print("You have abstained from weed for: ", '{:.2f}'.format(t.stop()),"seconds")
+        weed()
     if sub == 2:
-        print("You have abstained from alcohol for: ", '{:.2f}'.format(t.stop()),"seconds")
+        print("You have abstained from edibles for: ", '{:.2f}'.format(t.stop()),"seconds")
+        edibles()
     if sub == 3:
-        print("You have abstained from nicotine for: ", '{:.2f}'.format(t.stop()),"seconds")
+        print("You have abstained from alcohol for: ", '{:.2f}'.format(t.stop()),"seconds")
+        alcohol()
     if sub == 4:
-        print("You have abstained from cigarettes for: ", '{:.2f}'.format(t.stop()),"seconds")
+        print("You have abstained from nicotine for: ", '{:.2f}'.format(t.stop()),"seconds")
     if sub == 5:
-        print("You have abstained from cocaine for: ", '{:.2f}'.format(t.stop()),"seconds")
+        print("You have abstained from cigarettes for: ", '{:.2f}'.format(t.stop()),"seconds")
     if sub == 6:
-        print("You have abstained from heroin for: ", '{:.2f}'.format(t.stop()),"seconds")
+        print("You have abstained from cocaine for: ", '{:.2f}'.format(t.stop()),"seconds")
     
     t.start()
 
